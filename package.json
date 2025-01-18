@@ -1,0 +1,52 @@
+{
+  "name": "@townnerd/schwab-api-node",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Schwab API for Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "start:demo": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./examples/api_demo.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/..."
+  },
+  "keywords": [
+    "schwab",
+    "api",
+    "node",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.6.4",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "*",
+    "@types/ws": "^8.5.12",
+    "ts-node": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0",
+    "open": "^10.1.0",
+    "ws": "^8.18.0"
+  },
+  "bugs": {
+    "url": "https://github.com/.../issues"
+  },
+  "homepage": "https://github.com/..."
+}

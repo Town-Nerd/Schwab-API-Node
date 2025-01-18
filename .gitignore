@@ -1,0 +1,19 @@
+# Local environment
+.idea/
+.vscode/
+*.env
+tokens.json
+*.bak
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Build generated files
+dist
+lib
+*.tgz
