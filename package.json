@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Schwab API for Node.js",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "exports": {
-    "import": "./dist/index.js"
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/esm/index.js"
   },
   "files": [
     "dist"
@@ -18,11 +21,11 @@
   "scripts": {
     "start:demo": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./examples/api_demo.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && npm pack"
+    "build": "tsc --project tsconfig.cjs.json && tsc && npm pack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/..."
+    "url": "git+https://github.com/Town-Nerd/Schwab-API-Node.git"
   },
   "keywords": [
     "schwab",
@@ -46,7 +49,7 @@
     "ws": "^8.18.0"
   },
   "bugs": {
-    "url": "https://github.com/.../issues"
+    "url": "https://github.com/Town-Nerd/Schwab-API-Node/issues"
   },
-  "homepage": "https://github.com/..."
+  "homepage": "https://github.com/Town-Nerd/Schwab-API-Node"
 }
